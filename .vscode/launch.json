@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AdminApplication",
+            "request": "launch",
+            "mainClass": "com.emps.adminserver.admin.AdminApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EmployeeeApplication<employeee>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.emps.employeee.EmployeeeApplication",
+            "projectName": "employeee",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=54588 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=employeee"
+        }
+    ]
+}
